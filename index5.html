@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Javascript</title>
+</head>
+<body>
+  <h1>Ola mundo !</h1><!-- comentando o codigo do html para futuras consultas, pequeno exercicio em javascript-->
+  <p>Cursinho de Javascript do Guanabara </p>
+  <style>
+    body{/*colocando o estilo dentro do codigo do html fazendo uma estilização simples da pagina*/
+      background-color : #676767;
+      color: #e7e7e7;
+      font: normal, 30px, arial;
+    }
+    h1{
+      color: #454ccc
+    }
+    window{
+      background-color: aqua;
+    }
+  </style>
+</body>
+<script> //curso de javascript do Guanabara, o codigo de javascript foi adicionado dentro do html. 
+  var nome = window.prompt('Qual seu nome? ')// aki ele faz uma pergunta e guarda o valor dentro da variavel nome
+  document.write(`Olá,<strong>${nome}</strong>! Seu nome tem ${nome.length} letras`)// usar o crase ao inves de aspas ex ('') (``) sempre que tratar as variaveis dessa maneira ${variavel}
+  document.write('<br>')// aki usei uma tag para pular linha dentro de um comando, unico comando que funcionou ate agora
+  document.write(`Seu nome em letras maiusculas é ${nome.toUpperCase()}.`)// aki abre e fecha parenteses pq eu estou chamando um metodo entao ele precisa executar
+  document.write('<br>')
+  document.write(`Seu nome em letras minusculas é ${nome.toLocaleLowerCase()}.`)// aki abre e fecha parenteses pq eu estou chamando um metodo entao ele precisa executar
+</script>
+</html>

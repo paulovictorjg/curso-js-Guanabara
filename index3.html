@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Javascript</title>
+</head>
+<body>
+  <h1>Ola mundo !</h1><!-- comentando o codigo do html para futuras consultas, pequeno exercicio em javascript-->
+  <p>Cursinho de Javascript do Guanabara </p>
+  <style>
+    body{/*colocando o estilo dentro do codigo do html fazendo uma estilização simples da pagina*/
+      background-color : #676767;
+      color: #e7e7e7;
+      font: normal, 30px, arial;
+    }
+    h1{
+      color: #454ccc
+    }
+    window{
+      background-color: aqua;
+    }
+  </style>
+</body>
+<script> //curso de javascript do Guanabara, o codigo de javascript foi adicionado dentro do html. 
+  var numero1 = Number.parseInt(window.prompt('digite um numero : '))//o comando window.prompt trata os dados mesmo que sejam numeros como uma string independente dos valores digitados é preciso converter os valores de string para number com um comando para converter os valores de string para number o comando é o number.parseInt(n) aki ele vai converter o valor para um numero inteiro , number.parseFloat(n) aki ele vai converter o valor para um numero real (ex10.10)
+  var numero2 = Number(window.prompt('digite outro numero : '))//aki usei somente o comando Number para converter uma string para um numero e o JS vai decidir se é um numero inteiro ou real
+  var soma = numero1 + numero2 //aki ele vai somar os valores dos numeros dentro das variaveis numeros 1 e 2
+  window.alert('a soma dos numeros é ' + soma)
+  //window.alert('a soma dos numeros é ' + (String(soma)) ----- para converter um numero para uma string o comando aki é o String(variavel)) 
+</script>
+</html>
