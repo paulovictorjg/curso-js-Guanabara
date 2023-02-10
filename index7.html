@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Javascript</title>
+  <style>
+    #area {
+      font: normal 20pt arial;
+      background: rgb(42, 139, 42);
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area">
+  <!--<div id="area" onclick="clicar()" onmouseenter="entrar"() onmouseout="sair"() >nao esquecer dos () pois estou tratando de uma função que sera executada entao e obrigatorio os () Aki defini a funcao aki no html ao inves de definir no script  ******* esse metodo nao funcionou para função entrar e sair, utilizar a função diretamente pelo script******** -->
+    Interaja...
+  </div>
+
+  <script>
+    var a = document.getElementById('area')// aki a variavel foi criado fora do escopo da funcao para se tornar uma variavel global pois as 3 funções vao usar essa mesma variavel
+    a.addEventListener('click' , clicar)
+    a.addEventListener('mouseenter' , entrar)
+    a.addEventListener('mouseout' , sair)
+
+    function clicar(){
+      a.innerText = 'clicou' // comando para escrever algo na tela com o DOM. Aki foi usado para alterar o texto da caixa para clicou
+      a.style.background = 'red'
+    }
+    function entrar(){
+      a.innerText = 'Entrou !'
+    }
+    function sair(){
+      a.innerText = 'Saiu !'
+      a.style.background = 'green'
+    }
+  </script>
+</body>
+</html>
