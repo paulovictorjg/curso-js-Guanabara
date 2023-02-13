@@ -6,33 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somando Numeros</title>
   <style>
-    body {
+    .container{
       font: normal 18pt arial;
+      max-width: 410px;
+      max-height: 300px;
+      background-color: rgb(38, 182, 40);
+      padding-left: 5px;
+      border-radius: 15px;
     }
+    #res{
+    background: rgb(42, 139, 42);
+    max-width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 30px;
+    text-align: center ;
+    padding: 5px;
+    margin-left: -5px;
+  }
     input{
       font: normal 18pt arial;
       width: 100px;
+      border-radius: 15px;
+      background:#e2e2;
+      margin: 3px;
     }
-    #res{
-      margin-top: 20px;
+    #somar{
+      background-color: aquamarine;
     }
   </style>
+
 </head>
 <body>
-  <h1>Somando Valores</h1>
-  <input type="number" name = "txtn1" id = "txtn1"> +
-  <input type="number" name = "txtn2" id = "txtn2">
-  <input type="button" value = "somar" onclick = "somar()">
-  <div id = "res">Resultado</div>
-  <script>
-    function somar(){
-      var tn1 = document.getElementById('txtn1')
-      var tn2 = document.getElementById('txtn2')
+  <div class = "container">
+      <h1>Somando Valores</h1>
+      <input type="number" name = "txtn1" id = "txtn1"> +
+      <input type="number" name = "txtn2" id = "txtn2"> = 
+      <input type="button" value = "Somar" id = "somar" onclick = "somar()">
+      <div id = "res">Resultado</div>
+    </div>
+    <script>
+      function somar(){
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.getElementById('txtn2')
       var res = document.getElementById('res')
-      var n1 = number(tn1.value)
-      var n2 = number(tn2.value)
+      var n1 = Number(tn1.value)
+      var n2 = Number(tn2.value)
       var s = n1 + n2
-      res.innerHTML = 'A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>' 
+      res.innerHTML = (`O resultado da soma é <strong>${s}</strong>`)
     }
     </script>
 </body>
