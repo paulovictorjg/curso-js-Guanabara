@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições multipla switch</title>
+</head>
+
+<body>
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+        switch(diaSem){
+            case 0:
+                console.log ('domingo')
+            break
+            case 1:
+                console.log ('segunda feira')
+            break
+            case 2:
+                console.log ('terça feira')
+            break
+            case 3:
+                console.log ('quarta feira')
+            break
+            case 4:
+                console.log ('quinta feira')
+            break
+            case 5:
+                console.log ('sexta feira')
+            break
+            case 6:
+                console.log ('sabado')
+            break
+            default:
+            console.log ('dia invalido')
+
+        }
+    </script>
+</body>
+
+</html>
