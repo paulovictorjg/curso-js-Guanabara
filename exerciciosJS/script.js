@@ -1,13 +1,19 @@
 function carregar(){
     var msg = document.getElementById('msg')
-    var foto = document.getElementById('imagem')
+    var img = document.getElementById('imagem')
     var data = new Date()
-    var hora = 12
+    var hora = data.getHours()
     msg.innerHTML = (`Agora sao ${hora} horas`)
     if (hora >= 0 && hora < 12){
-        Image.src = 'imgfotomanha.svg'
-    }else if (hora >= 12 && hora < 18){
-        Image.src = 'fototarde.svg'
-    }else(hora >= 18 && hora < 23)
-        Image.src = 'fotonoite.svg'
+        img.src=('manha.png')
+        document.body.style.background = '#E6AAA0'
+    }
+    else if (hora >= 12 && hora < 18){
+        img.src = ('tarde.png')
+        document.body.style.background = '#BA5C2C'
+    }
+    else {
+    img.src = ('noite.png')
+    document.body.style.background = '#233151'
+    }
 }

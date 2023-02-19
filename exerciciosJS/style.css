@@ -6,18 +6,18 @@ header{
     color: #ffffff;
     text-align: center;
 }
-
 section{
-    background: #ffffff;
-    border-radius: 8px;
+    background: #f7f7f7;
+    border-radius: 15px;
     padding: 15px;
-    width: 550px;
+    width: 350px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.363);
+    text-align: center;
 }
-.foto{
+#foto{
+   margin-top: 10px;
 }
-
 footer{
     color: #ffffff;
     text-align: center;
