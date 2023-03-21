@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styletabuada.css">
+<head>
+    <title>Tabuada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #form {
+            margin: 50px auto;
+            width: 400px;
+            text-align: center;
+        }
+
+        #result {
+            margin: 50px auto;
+            width: 400px;
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabuada</h1>
+    <form id="form">
+        <label for="number">Digite um número:</label>
+        <input type="number" id="number" name="number">
+        <button type="button" onclick="generateTable()">Gerar Tabuada</button>
+    </form>
+    <div id="result"></div>
+    <script src="scripttabuada.js"></script>
+</body>
+
+</html>
